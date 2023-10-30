@@ -8,7 +8,7 @@
 
 ### Решение 1
 
-![alt text](https://github.com/artmur1/12-03-hw/blob/main/12-04-zad1.png)
+![alt text](https://github.com/artmur1/12-04-hw/blob/main/12-04-zad1.png)
 
 SELECT s.store_id, CONCAT(s2.first_name, ' ', s2.last_name) AS Manager, c2.city, COUNT(c.customer_id) AS 'Number of users'
 
@@ -32,7 +32,7 @@ HAVING COUNT(c.customer_id) > 300;
 
 ### Решение 2
 
-![alt text](https://github.com/artmur1/12-03-hw/blob/main/12-04-zad2.png)
+![alt text](https://github.com/artmur1/12-04-hw/blob/main/12-04-zad2.png)
 
 SELECT COUNT(film_id)
 
@@ -46,7 +46,7 @@ WHERE length > (SELECT AVG(`length`) FROM film f2);
 
 ### Решение 3
 
-![alt text](https://github.com/artmur1/12-03-hw/blob/main/12-04-zad3.png)
+![alt text](https://github.com/artmur1/12-04-hw/blob/main/12-04-zad3.png)
 
 SELECT MONTH(payment_date), SUM(amount), COUNT(rental_id)
 
