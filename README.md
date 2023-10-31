@@ -58,6 +58,20 @@ ORDER BY SUM(amount) DESC
 
 LIMIT 1;
 
+#### Доработка задания 3
+
+![alt text](https://github.com/artmur1/12-04-hw/blob/main/12-04-zad3-1.png)
+
+SELECT DATE_FORMAT(payment_date, '%M – 2005') AS Month, SUM(amount), COUNT(rental_id)
+
+FROM payment
+
+GROUP BY DATE_FORMAT(payment_date, '%M – 2005')
+
+ORDER BY SUM(amount) DESC
+
+LIMIT 1;
+
 ## Дополнительные задания (со звёздочкой*)
 Эти задания дополнительные, то есть не обязательные к выполнению, и никак не повлияют на получение вами зачёта по этому домашнему заданию. Вы можете их выполнить, если хотите глубже шире разобраться в материале.
 
